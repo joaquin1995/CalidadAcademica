@@ -1,0 +1,109 @@
+<table id="tblDatos">
+                    <thead>
+                        <tr>
+                            <th style="display:none;">id</th>
+                            <th>Semestre</th>
+                            <th>Modulo</th>
+                            <th>Fechas</th>
+                            <th>Tipo de Actividad</th>
+                            <th style="display:none;">Descripcion</th>
+                            <th>Asignacion</th>
+                            <th>Carrera</th>
+                            <th>Docente</th>
+                            <th style="display:none;">estado</th>
+                            <th>Archivo</th>
+
+
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbody"><tr> 
+                        <td style="display:none;">10</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>2019-10-01</td>
+                        <td>TALLERES INTERNOS</td>
+                        <td style="display:none;">esto es otra descripcion</td>
+                        <td>MEDIO AMBIENTE</td>
+                        <td>INGENIERIA MECANICA AUTOMOTRIZ  Y AGROINDUSTRIAL</td>
+                        <td>HUGO MARCELO</td>
+                        <td style="display:none;">P</td>
+                        <td><a class="btn-floating grey darken-4 modal-trigger" data-target="idModal" onclick="fila(event)"><i class="material-icons">add</i></a></td></tr><tr> 
+                        <td style="display:none;">13</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>2019-12-05</td>
+                        <td>VISITAS TECNICAS</td>
+                        <td style="display:none;">esto es una descripcion </td>
+                        <td>MEDIO AMBIENTE</td>
+                        <td>INGENIERIA DE SISTEMAS</td>
+                        <td>HUGO MARCELO</td>
+                        <td style="display:none;">P</td>
+                        <td><a class="btn-floating grey darken-4 modal-trigger" data-target="idModal" onclick="fila(event)"><i class="material-icons">add</i></a></td></tr><tr style="display: none;"> 
+                        <td style="display:none;">12</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>2019-12-04</td>
+                        <td>VISITAS TECNICAS</td>
+                        <td style="display:none;">esto es una descripcion</td>
+                        <td>CIENCIAS DE LA COMPUTACION</td>
+                        <td>INGENIERIA DE SISTEMAS</td>
+                        <td>HUGO MARCELO</td>
+                        <td style="display:none;">P</td>
+                        <td><a class="btn-floating grey darken-4 modal-trigger" data-target="idModal" onclick="fila(event)"><i class="material-icons">add</i></a></td></tr><tr style="display: none;"> 
+                        <td style="display:none;">11</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>2019-12-04</td>
+                        <td>VISITAS TECNICAS</td>
+                        <td style="display:none;">Esto es una prueba</td>
+                        <td>MEDIO AMBIENTE</td>
+                        <td>INGENIERIA DE SISTEMAS</td>
+                        <td>HUGO MARCELO</td>
+                        <td style="display:none;">P</td>
+                        <td><a class="btn-floating grey darken-4 modal-trigger" data-target="idModal" onclick="fila(event)"><i class="material-icons">add</i></a></td></tr><tr style="display: none;"> 
+                        <td style="display:none;">6</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>2019-10-14</td>
+                        <td>VISITAS TECNICAS</td>
+                        <td style="display:none;">esto es una descripcion de la actividad</td>
+                        <td>MEDIO AMBIENTE</td>
+                        <td>INGENIERIA DE SISTEMAS</td>
+                        <td>HUGO MARCELO</td>
+                        <td style="display:none;">P</td>
+                        <td><a class="btn-floating grey darken-4 modal-trigger" data-target="idModal" onclick="fila(event)"><i class="material-icons">add</i></a></td></tr><tr style="display: none;"> 
+                        <td style="display:none;">8</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>2019-10-16</td>
+                        <td>VISITAS TECNICAS</td>
+                        <td style="display:none;">esto es un prueba</td>
+                        <td>MEDIOS DE PUBLICIDAD</td>
+                        <td>INGENIERIA DE SISTEMAS</td>
+                        <td>HUGO MARCELO</td>
+                        <td style="display:none;">P</td>
+                        <td><a class="btn-floating grey darken-4 modal-trigger" data-target="idModal" onclick="fila(event)"><i class="material-icons">add</i></a></td></tr><tr style="display: none;"> 
+                        <td style="display:none;">7</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>2019-10-15</td>
+                        <td>VISITAS TECNICAS</td>
+                        <td style="display:none;">esta es una descripcion de actividad</td>
+                        <td>MEDIO AMBIENTE</td>
+                        <td>INGENIERIA DE SISTEMAS</td>
+                        <td>HUGO MARCELO</td>
+                        <td style="display:none;">P</td>
+                        <td><a class="btn-floating grey darken-4 modal-trigger" data-target="idModal" onclick="fila(event)"><i class="material-icons">add</i></a></td></tr><tr style="display: none;"> 
+                        <td style="display:none;">9</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>2019-10-15</td>
+                        <td>VISITAS TECNICAS</td>
+                        <td style="display:none;">esto es otra descripcion</td>
+                        <td>MEDIO AMBIENTE</td>
+                        <td>COMERCIO INTERNACIONAL</td>
+                        <td>HUGO MARCELO</td>
+                        <td style="display:none;">P</td>
+                        <td><a class="btn-floating grey darken-4 modal-trigger" data-target="idModal" onclick="fila(event)"><i class="material-icons">add</i></a></td></tr></tbody>
+                </table>
