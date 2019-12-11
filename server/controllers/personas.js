@@ -1,6 +1,7 @@
 const personas = require('../models').personas;
-const roles = require('../models').roles;
+// const roles = require('../models').roles;
 const cuentas = require('../models').cuentas;
+const jwt = require('../services/jwt');
 
 console.log(personas);
 
@@ -60,14 +61,14 @@ const put = (req, res) => {
 
 const getPersonRol = (req, res) => {
     personas.findAll({
-        include:[{
-            model:cuentas,
-            require:true
-        }],
-        where:{
-            idrol: req.params.idrol
-        }
-    })
+            include: [{
+                model: cuentas,
+                require: true
+            }],
+            where: {
+                idrol: req.params.idrol
+            }
+        })
         .then(persona => {
             res.status(200).send({
                 persona
@@ -75,10 +76,50 @@ const getPersonRol = (req, res) => {
         })
         .catch(err => {
             res.status(500).send({
-                message: 'error al buscar las personas:',err
+                message: 'error al buscar las personas:',
+                err
             });
         });
 
+};
+
+
+const getLogin = (req, res) => {
+    personas.findOne({
+            include: [{
+                model: cuentas,
+                require: true,
+                where: {
+                    usuario: req.body.usuario,
+                    password: req.body.password
+                }
+            }],
+        })
+        .then(persona => {
+            if (persona) {
+                if (req.body.token) {
+                    res.status(200).send({
+                        token: jwt.createToken(persona)
+                    });
+                } else {
+                    res.status(200).send({
+                        persona: persona
+                    });
+                }
+
+            } else {
+                res.status(401).send({
+                    message: 'Acceso No Autorizado'
+                })
+            }
+
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: 'error al buscar las personas:',
+                err
+            });
+        });
 };
 
 
@@ -86,5 +127,6 @@ module.exports = {
     get,
     post,
     put,
-    getPersonRol
+    getPersonRol,
+    getLogin
 };

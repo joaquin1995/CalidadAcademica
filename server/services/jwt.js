@@ -5,8 +5,11 @@ const secret = config.token_secret;
 exports.createToken = (usuario) => {
     let params = {
         sub:usuario.id,
-        usuario: usuario.usuario,
-        id_rol:usuario.id_rol
+        usuario: usuario.nombres,
+        apat:usuario.apat,
+        idrol:usuario.idrol,
+        limit: usuario.limitacion,
+        email: usuario.email
     }
 
     let jwt = nJwt.create(params,secret);
